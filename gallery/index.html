@@ -42,19 +42,37 @@
 		       
 
 			<div>
-				<p>Some beautiful images.</p>
-<p>
-<img src="/amida-sanzon.jpg" alt="/amida-sanzon.jpg" title="/amida-sanzon.jpg" /></p>
-<p>
-<img src="/izanamitoizanagi.jpg" alt="/izanamitoizanagi.jpg" title="/izanamitoizanagi.jpg" /></p>
-<p>
-<img src="/confucius.jpg" alt="/confucius.jpg" title="/confucius.jpg" /></p>
-<p>
-<img src="/socrates.jpg" alt="/socrates.jpg" title="/socrates.jpg" /></p>
-<p>
-<img src="/virgil.jpg" alt="/virgil.jpg" title="/virgil.jpg" /></p>
-<p>
-<img src="/ken-and-den.jpg" alt="/ken-and-den.jpg" title="/ken-and-den.jpg" /></p>
+				Some Beautiful Images
+
+<style>
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+</style>
+<div class="image-gallery">
+  <img src="/amida-sanzon.jpg" alt="Amida Sanzon">
+  <img src="/izanamitoizanagi.jpg" alt="Izanami and Izanagi">
+  <img src="/confucius.jpg" alt="Confucius">
+  <img src="/socrates.jpg" alt="Socrates">
+  <img src="/virgil.jpg" alt="Virgil">
+  <img src="/ken-and-den.jpg" alt="Ken and Den">
+</div>
 
 			</div>
 		</article>
